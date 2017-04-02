@@ -1,0 +1,37 @@
+body {
+    font-family: "Times New Roman", serif;
+}
+.pizzagarbles {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.hamburgerfoes {
+    text-align: center;
+    font-style: italic; 
+    margin-bottom: 44px;
+    font-size: 20px;
+}
+.question {
+    font-weight: bold;
+    font-size: 18px;
+}
+#resultsButton {
+    font-size: 20px;
+    background-color: red;
+    color: white; 
+    border-radius: 120px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: none;
+    font-family: "Times New Roman", serif; 
+}
+.freddypic {
+    position: fixed;
+    float: right;
+    right: 0px;
+    bottom: 0px;
+    width: 40%;
+}

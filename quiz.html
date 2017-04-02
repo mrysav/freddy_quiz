@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<!-- For this assignment, you will creating the shell of a quiz.
+     It should include:
+       1. A title (probably as a header tag)
+       2. A description of the quiz under the header
+       3. At least 3 questions.
+
+     Each question should have the question text and four options as answers.
+     You can design the tags around the question any way you want, as long as it has the 
+     question text and four answers.
+
+     In order to make the answers you will need what's called a "radio button."
+     Radio buttons allow the user to choose exactly one option from a group of options.
+     That looks like this:
+     <input class="answer" type="radio" name="group1" value="a">Cow<br>
+     There are 3 attributes:
+       - type: the type of input, in this case, 'radio' for radio button.
+       - name: the name of the group of buttons. Users can only select one option from each group of options.
+               (each question will have multiple <input class="answer"> tags, with one group name per question)
+       - value: the value of the input, hidden from the user, but this is what the HTML page sees as the value of the answer.
+
+     You can paste the example into the HTML below to experiment and see what it looks like.
+--> <head> 
+  <title> Which Character From Freddy the Pig are You?
+  </title>
+  <link rel="stylesheet" type="text/css" href="quiz_styles.css">
+</head>
+<body>
+<h1 class="pizzagarbles">Which Character From Freddy the Pig are You?
+  </h1>
+  <h2 class="hamburgerfoes"> Jock? Jack? Hank the old white horse? Take this quiz to see which of Mr. Bean's talking animals you are!
+  </h2>
+  <p> <span class="question"> Question 1: On a given day, what time do you wake up in the morning? </span> <br/>
+    <input class="answer" type="radio" name="question1" value="cow">When the rooster crows. </input> <br/>
+    <input class="answer" type="radio" name="question1" value="pig">Morning? I always mean to get up in the morning, but it never quite happens. </input> <br/>
+    <input class="answer" type="radio" name="question1" value="rooster">The crack of dawn. </input> <br/>
+    <input class="answer" type="radio" name="question1" value="cat">Whenever I damn well please. </input> <br/>
+    </p>
+    <p> <span class="question"> Question 2: Which of these would you consider to be your best trait? </span> <br/>
+    <input class="answer" type="radio" name="question2" value="rooster">My dashing eloquence. </input> <br/>
+    <input class="answer" type="radio" name="question2" value="pig">My wordsmith-ery. </input> <br/>
+    <input class="answer" type="radio" name="question2" value="cow">My common sense. </input> <br/>
+    <input class="answer" type="radio" name="question2" value="cat">My quick reflexes, no one can get past me! </input> <br/>
+    </p>
+    <p> <span class="question"> Question 3: Describe your perfect adventure: </span> <br/>
+    <input class="answer" type="radio" name="question3" value="pig">A romp around London, like the great Sherlock Holmes. </input> <br/>
+    <input class="answer" type="radio" name="question3" value="rooster">Galavanting through Spain, just like the beloved Don Quixote. </input> <br/>
+    <input class="answer" type="radio" name="question3" value="cat">On a secret mission, spying for the goverment. </input> <br/>
+    <input class="answer" type="radio" name="question3" value="cow">Down to the pond, that's enough adventure for me... </input> <br/>
+    </p>
+    <p> <span class="question"> Question 4: What is the best part of your day? </span> <br/>
+    <input class="answer" type="radio" name="question4" value="cow">Just seeing my friends every day. </input> <br/>
+    <input class="answer" type="radio" name="question4" value="cat">When the sun hits my nap spot. </input> <br/>
+    <input class="answer" type="radio" name="question4" value="pig">Thinking in my armchair. </input> <br/>
+    <input class="answer" type="radio" name="question4" value="rooster">Imparting my wisdom on others. </input> <br/>
+    </p>
+    <p> <span class="question"> Question 5: How do you deal with your enemies? </span> <br/>
+    <input class="answer" type="radio" name="question5" value="cat">Lick 'em in a good fight. </input> <br/>
+    <input class="answer" type="radio" name="question5" value="pig">Use my wit to trick them. </input> <br/>
+    <input class="answer" type="radio" name="question5" value="rooster">Give them the old what-for! (or just try to convince them I'm right). </input> <br/>
+    <input class="answer" type="radio" name="question5" value="cow">Oh dear, I don't think I have any enemies. </input> <br/>
+    </p>
+    <p> <span class="question"> Question 6: Where do you prefer to spend your time? </span> <br/>
+    <input class="answer" type="radio" name="question6" value="pig">In my study, deep in thought. </input> <br/>
+    <input class="answer" type="radio" name="question6" value="rooter">Managing my household. </input> <br/>
+    <input class="answer" type="radio" name="question6" value="cow">Hanging out with my family. </input> <br/>
+    <input class="answer" type="radio" name="question6" value="cat">Lazing in the sun. </input> <br/>
+    </p>
+    <p> <span class="question"> Question 7: What is your favorite color? </span> <br/>
+    <input class="answer" type="radio" name="question7" value="cow">Bright green, like fresh grass. </input> <br/>
+    <input class="answer" type="radio" name="question7" value="cat">Black. Simple. </input> <br/>
+    <input class="answer" type="radio" name="question7" value="pig">Pink, the color of happiness. </input> <br/>
+    <input class="answer" type="radio" name="question7" value="rooster">Red! </input> <br/>
+    </p>
+    <p> <span class="question"> Question 8: Choose a snack: </span> <br/>
+    <input class="answer" type="radio" name="question8" value="rooster">Cornbread. </input> <br/>
+    <input class="answer" type="radio" name="question8" value="cow">A light salad. </input> <br/>
+    <input class="answer" type="radio" name="question8" value="cat">Tuna sandwich. </input> <br/>
+    <input class="answer" type="radio" name="question8" value="pig"> Biscuits and some gravy. Might as well also have some lemonade. And cookies! With cake as dessert. </input> <br/>
+    </p>
+    <p> <span class="question"> Question 9: Which is the best Freddy the Pig book? </span> <br/>
+    <input class="answer" type="radio" name="question9" value="cat">Freddy and The Bean Home News </input> <br/>
+    <input class="answer" type="radio" name="question9" value="rooster">Freddy Goes to Florida </input> <br/>
+    <input class="answer" type="radio" name="question9" value="pig">Freddy the Detective </input> <br/>
+    <input class="answer" type="radio" name="question9" value="cow">Freddy the Politician </input> <br/>
+    </p>
+
+    <input id="resultsButton" type="submit" value="See My Results!" />
+
+    <img src="freddybackground.jpg" class="freddypic"/> 
+
+    </body>
+    
+
+</html>

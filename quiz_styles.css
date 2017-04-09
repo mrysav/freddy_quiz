@@ -35,3 +35,10 @@ body {
     bottom: 0px;
     width: 40%;
 }
+#resultanswer {
+    font-weight: bold;
+    font-size: 20px;
+}
+#quizbox {
+    width: 60%;
+}

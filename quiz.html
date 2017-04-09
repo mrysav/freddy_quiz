@@ -32,6 +32,7 @@
   </h1>
   <h2 class="hamburgerfoes"> Jock? Jack? Hank the old white horse? Take this quiz to see which of Mr. Bean's talking animals you are!
   </h2>
+  <div id="quizbox">
   <p> <span class="question"> Question 1: On a given day, what time do you wake up in the morning? </span> <br/>
     <input class="answer" type="radio" name="question1" value="cow">When the rooster crows. </input> <br/>
     <input class="answer" type="radio" name="question1" value="pig">Morning? I always mean to get up in the morning, but it never quite happens. </input> <br/>
@@ -86,10 +87,30 @@
     <input class="answer" type="radio" name="question9" value="pig">Freddy the Detective </input> <br/>
     <input class="answer" type="radio" name="question9" value="cow">Freddy the Politician </input> <br/>
     </p>
+    </div>
 
     <input id="resultsButton" type="submit" value="See My Results!" />
 
     <img src="freddybackground.jpg" class="freddypic"/> 
+
+    <h3 id="resultanswer"> 
+    </h3>
+      <p id="yayresult">
+      </p> 
+
+    <script type="application/javascript">
+    for(var i = 0; i < 10; i = i + 1) {
+      console.log("This is my " + i + "th time around the carousel!");
+    }
+
+    var myArray = [0, 1, 1, 2, 3, 5, 8, 13];
+    for(var i = 0; i < myArray.length; i = i + 1) {
+      console.log("This is the " + (i + 1) + "th Fibonacci number: " + myArray[i]);
+    }
+
+    console.log("myArray is this big: " + myArray.length);
+    
+    </script>
 
     </body>
     

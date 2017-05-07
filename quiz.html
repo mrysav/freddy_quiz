@@ -1,28 +1,6 @@
 <!DOCTYPE html>
 <html>
-
-<!-- For this assignment, you will creating the shell of a quiz.
-     It should include:
-       1. A title (probably as a header tag)
-       2. A description of the quiz under the header
-       3. At least 3 questions.
-
-     Each question should have the question text and four options as answers.
-     You can design the tags around the question any way you want, as long as it has the 
-     question text and four answers.
-
-     In order to make the answers you will need what's called a "radio button."
-     Radio buttons allow the user to choose exactly one option from a group of options.
-     That looks like this:
-     <input class="answer" type="radio" name="group1" value="a">Cow<br>
-     There are 3 attributes:
-       - type: the type of input, in this case, 'radio' for radio button.
-       - name: the name of the group of buttons. Users can only select one option from each group of options.
-               (each question will have multiple <input class="answer"> tags, with one group name per question)
-       - value: the value of the input, hidden from the user, but this is what the HTML page sees as the value of the answer.
-
-     You can paste the example into the HTML below to experiment and see what it looks like.
---> <head> 
+      <head> 
   <title> Which Character From Freddy the Pig are You?
   </title>
   <link rel="stylesheet" type="text/css" href="quiz_styles.css">
@@ -99,17 +77,7 @@
       </p> 
 
     <script type="application/javascript">
-    for(var i = 0; i < 10; i = i + 1) {
-      console.log("This is my " + i + "th time around the carousel!");
-    }
-
-    var myArray = [0, 1, 1, 2, 3, 5, 8, 13];
-    for(var i = 0; i < myArray.length; i = i + 1) {
-      console.log("This is the " + (i + 1) + "th Fibonacci number: " + myArray[i]);
-    }
-
-    console.log("myArray is this big: " + myArray.length);
-
+  
     var Answers = [];
     function clickanswer(QuestionNumber, Animal)
     {
@@ -136,6 +104,15 @@
       }
       if(cow >= pig && cow >= rooster && cow >= cat){
         console.log("Mrs. Wiggins!")
+      }
+      else if(rooster >= pig && rooster >= cow && rooster >= cat){
+        console.log("Charles the Rooster")
+      }
+      else if(cat >= cow && cat >= pig && cat >= rooster){
+        console.log("Jinx")
+      }
+      else if(pig >= cow && pig >=rooster && pig >=cat){
+        console.log("FREDDY the PIG")
       }
     }
     </script>
